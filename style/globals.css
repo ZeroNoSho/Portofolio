@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}*/
+
+/*@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}*/
+
+body {
+  background-color: rgb(20, 20, 20);
+}
+
+.p-color-style {
+  color: #ffcb74;
+}
+
+.p-setegah {
+  padding-top: 1px;
+  padding-bottom: 1.5px;
+}
+.inline-block1 {
+  writing-mode: vertical-rl;
+  letter-spacing: 0.3em;
+}
+
+.color-bg-or {
+  background-color: #ffcb74;
+  width: 1px !important;
+}
+.color-bg-or1 {
+  background-color: rgb(255, 203, 116);
+  width: 1px !important;
+  height: 200px;
+}
+@media (max-width: 765px) {
+  .inline-block1 {
+    writing-mode: horizontal-tb;
+    letter-spacing: 0.3em;
+  }
+
+  .color-bg-or2 {
+    background-color: rgb(42, 42, 42);
+  }
+  .importan {
+    display: block !important;
+  }
+  .color-bg-or4 {
+    padding: 0px;
+  }
+}
+@media (min-width: 768px) {
+  .inline-block3 {
+    writing-mode: horizontal-tb !important;
+    letter-spacing: 0.3em;
+  }
+}
+
+.color-bg-or3 {
+  background-color: rgb(42, 42, 42);
+}
+.color-bg-or4 {
+  padding: 20px;
+  background-color: rgb(42, 42, 42);
+}
