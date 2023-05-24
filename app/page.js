@@ -45,13 +45,13 @@ export default function Home() {
     <main>
       <div className="inside xl:p-24 max-[765px]:p-1 md:p-1">
         <div id="first-pages" className="mx-20 my-11 max-[765px]:mx-10" data-aos="fade" data-aos-duration="3000" data-aos-delay="1000">
-          <p className="p-color-style text-lg font-semibold">Hi, i'am</p>
+          <p className="p-color-style text-lg font-semibold">Hi, i&apos;am</p>
           <div className="py-5">
             <p className="text-slate-300 text-7xl font-semibold max-[765px]:text-3xl">Ari Rachaman.</p>
             <p className="text-slate-400 text-7xl font-semibold max-[765px]:text-5xl">I build things for the web.</p>
           </div>
           <div className="py-5">
-            <p className="text-slate-500 text-lg  max-[765px]:text-base">i'm a frontend developer, passionate about learning and collaboration, i'm</p>
+            <p className="text-slate-500 text-lg  max-[765px]:text-base">im a frontend developer, passionate about learning and collaboration, i&apos;m</p>
             <p className="text-slate-500 text-lg  max-[765px]:text-base">currently looking for any new opportunities.</p>
           </div>
         </div>
@@ -73,7 +73,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <p className="text-slate-500 text-lg max-[765px]:text-base">Here are a few technologies i've been working with recently</p>
+                <p className="text-slate-500 text-lg max-[765px]:text-base">Here are a few technologies i&apos;ve been working with recently</p>
                 <ul className="text-slate-500 list-disc max-[765px]:text-base pt-5">
                   <li className="ml-5">ReactJS</li>
                   <li className="ml-5">NextJS</li>
@@ -140,7 +140,7 @@ export default function Home() {
 
         <div id="Work-me" className="mx-20 mt-40 mb-40 max-[765px]:mx-5" data-aos="fade" data-aos-duration="3000" data-aos-delay="500">
           <p className="text-slate-300 text-3xl font-bold my-10 max-[765px]:text-2xl my-7">
-            <span className="text-2xl p-color-style max-[765px]:text-xl">03.</span> Some Things I've Built
+            <span className="text-2xl p-color-style max-[765px]:text-xl">03.</span> Some Things I&apos;ve Built
           </p>
 
           <div className="work-content">
@@ -151,7 +151,7 @@ export default function Home() {
                   <div className="color-bg-or4  mt-5 rounded">
                     <p className="text-slate-500 text-lg w-fit text-justify max-[765px]:py-1 max-[765px]:px-5 max-[765px]:text-sm">
                       Weather Application built with ReactJS, and the ability to capture Weather And RealTime Data in various countries. With this application, you can see the weather based on the area you entered. Plus, with a sleek and
-                      intuitive user interface, you'll have all the information you need at your fingertips.
+                      intuitive user interface, you&apos;ll have all the information you need at your fingertips.
                     </p>
                   </div>
                   <p className="text-slate-500 text-sm pt-5 pb-2 pl-1 max-[765px]:pl-5 max-[765px]:text-xs">React, Bootstrap, API</p>
@@ -175,7 +175,7 @@ export default function Home() {
                   <p className="text-slate-300 text-2xl font-bold max-[765px]:px-5 max-[765px]:pt-5">e-commerce App</p>
                   <div className="color-bg-or4 mt-5 rounded">
                     <p className="text-slate-500 text-lg w-fit text-justify max-[765px]:py-1 max-[765px]:px-5 max-[765px]:text-sm">
-                      An Online Store application built with ReactJS, With this application, you can see various types of sales based on existing categories. Plus, with a sleek and intuitive user interface, you'll have all the information
+                      An Online Store application built with ReactJS, With this application, you can see various types of sales based on existing categories. Plus, with a sleek and intuitive user interface, you&apos;ll have all the information
                       you need at your fingertips.
                     </p>
                   </div>
@@ -199,7 +199,7 @@ export default function Home() {
                   <div className="color-bg-or4  mt-5 rounded">
                     <p className="text-slate-500 text-lg w-fit text-justify max-[765px]:py-1 max-[765px]:px-5 max-[765px]:text-sm">
                       Online Download Application built with ReactJS. With this application, you can download videos on IG and YouTube directly and can also download Tiktok videos without a watermark. Plus, with a sleek and intuitive user
-                      interface, you'll have all the information you need at your fingertips.
+                      interface, you&apos;ll have all the information you need at your fingertips.
                     </p>
                   </div>
                   <p className="text-slate-500 text-sm pt-5 pb-2 pl-1 max-[765px]:pl-5 max-[765px]:text-xs">React, Bulma, API, Firebase</p>
