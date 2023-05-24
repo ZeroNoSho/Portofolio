@@ -23,7 +23,7 @@ export default function Nav() {
           <FontAwesomeIcon icon={open ? faXmark : faBars} className="p-color-style" />
         </div>
       </div>
-      <div className={`${open ? "block" : "hidden"} xl:block`}>
+      <div className={`${open ? "block" : "hidden"} md:block`}>
         <ul className="flex max-[765px]:block" data-aos="fade-left" data-aos-duration="3000">
           <li className="text-slate-400 py-2 px-5 ui-font-serif font-medium text-base tracking-widest hover:text-orange-300 md:px-3">
             <Link href="/">
