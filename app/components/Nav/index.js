@@ -47,7 +47,7 @@ export default function Nav() {
             </Link>
           </li>
           <li className="text-slate-400 py-2 px-5 ui-font-serif p-color-style tracking-widest hover:text-orange-300 md:px-3">
-            <Link href="" className="outline outline-offset-2 outline-1 px-4 text-sm p-setegah rounded-sm md:px-2">
+            <Link href="/" className="outline outline-offset-2 outline-1 px-4 text-sm p-setegah rounded-sm md:px-2">
               Resume
             </Link>
           </li>

@@ -1,8 +1,8 @@
 import "@/style/globals.css";
 import 'aos/dist/aos.css';
 import { Inter } from "next/font/google";
-import Nav from "@/components/Nav";
-import Footer from "@/components/Foot";
+import Nav from "@/app/components/Nav";
+import Footer from "@/app/components/Foot";
 
 const inter = Inter({ subsets: ["latin"] });
 

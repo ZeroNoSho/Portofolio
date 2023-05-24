@@ -36,13 +36,13 @@ export default function Home() {
     delay: 0, // values from 0 to 3000, with step 50ms
     duration: 400, // values from 0 to 3000, with step 50ms
     easing: "ease", // default easing for AOS animations
-    once: false, // whether animation should happen only once - while scrolling down
-    mirror: false, // whether elements should animate out while scrolling past them
-    anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    once: false,
+    mirror: false,
+    anchorPlacement: "top-bottom",
   });
 
   return (
-    <main>
+    <div>
       <div className="inside xl:p-24 max-[765px]:p-1 md:p-1">
         <div id="first-pages" className="mx-20 my-11 max-[765px]:mx-10" data-aos="fade" data-aos-duration="3000" data-aos-delay="1000">
           <p className="p-color-style text-lg font-semibold">Hi, i&apos;am</p>
@@ -339,6 +339,6 @@ export default function Home() {
           <div className="color-bg-or h-20"></div>
         </div>
       </div>
-    </main>
+    </div>
   );
 }
