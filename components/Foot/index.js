@@ -1,3 +1,4 @@
+import Link from "next/link";
 export default function Footer() {
   return (
     <div id="foot" className="mt-10 mb-60 mx-10">
@@ -11,9 +12,9 @@ export default function Footer() {
       </div>
 
       <div className="text-slate-400 py-2 px-7 ui-font-serif p-color-style text-center">
-        <a href="/" className="outline outline-offset-2 outline-1 px-7 py-2 text-base p-setegah rounded-sm">
+        <Link href="mailto:rachmanari745@gmail.com" className="outline outline-offset-2 outline-1 px-7 py-2 text-base p-setegah rounded-sm">
           Say Hello
-        </a>
+        </Link>
       </div>
     </div>
   );

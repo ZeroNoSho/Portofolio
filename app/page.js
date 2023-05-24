@@ -296,7 +296,7 @@ export default function Page() {
 
       <div className="outside max-[765px]:hidden">
         <div className="fixed bottom-0 right-12 p-color-style flex inline-block1 items-center gap-2">
-          <Link className="p-color-style text-lg" href="https://vercel.com/zeronosho/portofolio-wajp">
+          <Link className="p-color-style text-lg" href="mailto:rachmanari745@gmail.com">
             inukuro351@gmail.com
           </Link>
           <div className="color-bg-or h-40"></div>
