@@ -303,15 +303,15 @@ export default function Page() {
         </div>
 
         <div className="fixed bottom-0 left-12 p-color-style flex inline-block1 items-center gap-2">
-          <Link className="p-color-style text-lg" href="https://vercel.com/zeronosho/portofolio-wajp">
+          <Link className="p-color-style text-lg" href="https://github.com/ZeroNoSho">
             <FontAwesomeIcon icon={faGithub} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
-          <Link className="p-color-style text-ls" href="https://vercel.com/zeronosho/portofolio-wajp">
+          <Link className="p-color-style text-ls" href="https://www.linkedin.com/in/ari-rachman-395870198/">
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
-          <Link className="p-color-style text-lg" href="https://vercel.com/zeronosho/portofolio-wajp">
+          <Link className="p-color-style text-lg" href="https://www.instagram.com/ari_rachman01/">
             <FontAwesomeIcon icon={faLinkedinIn} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
