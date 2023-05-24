@@ -7,10 +7,10 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 export default function Nav() {
   const [open, SetOpen] = useState(false);
   return (
-    <main className="flex flex-row justify-between mx-10 my-3 max-[765px]:block max-[765px]:mx-2 md:mx-8">
+    <div className="flex flex-row justify-between mx-10 my-3 max-[765px]:block max-[765px]:mx-2 md:mx-8">
       <div className="flex flex-row justify-between">
-        <h3 className="p-color-style py-2 px-5 ui-font-serif font-semibold text-xl md:px-2" data-aos="fade-right" data-aos-duration="3000">
-          <Link href="/">
+        <h3 className="p-color-style py-2 px-5 ui-font-serif font-semibold text-xl md:px-2">
+          <Link href="/page">
             <span className="pr-2">A</span>
             <span className="pr-2">R</span>
             <span className="pr-2">I</span>
@@ -26,23 +26,23 @@ export default function Nav() {
       <div className={`${open ? "block" : "hidden"} xl:block`}>
         <ul className="flex max-[765px]:block" data-aos="fade-left" data-aos-duration="3000">
           <li className="text-slate-400 py-2 px-5 ui-font-serif font-medium text-base tracking-widest hover:text-orange-300 md:px-3">
-            <Link href="#about-me">
+            <Link href="/">
               <span className="p-color-style text-xs">01.</span> About
             </Link>
           </li>
           <li className="text-slate-400 py-2 px-5 ui-font-serif font-medium text-base tracking-widest hover:text-orange-300 md:px-3">
-            <Link href="#Certificate-me">
+            <Link href="/">
               <span className="p-color-style text-sm text-xs"> 02.</span>
               Certificate
             </Link>
           </li>
           <li className="text-slate-400 py-2 px-5 ui-font-serif font-medium text-base tracking-widest hover:text-orange-300 md:px-3">
-            <Link href="#Work-me">
+            <Link href="/">
               <span className="p-color-style text-xs">03.</span> Work
             </Link>
           </li>
           <li className="text-slate-400 py-2 px-5 ui-font-serif font-medium text-base tracking-widest hover:text-orange-300 md:px-3">
-            <Link href="#foot">
+            <Link href="/">
               <span className="p-color-style text-xs">04.</span> Contact
             </Link>
           </li>
@@ -53,6 +53,6 @@ export default function Nav() {
           </li>
         </ul>
       </div>
-    </main>
+    </div>
   );
 }

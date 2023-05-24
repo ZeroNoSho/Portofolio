@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div id="foot" className="mt-10 mb-60 mx-10" data-aos="fade-up" data-aos-duration="3000">
+    <div id="foot" className="mt-10 mb-60 mx-10">
       <div className="p-5">
         <p className="p-color-style text-center text-lg">04. What&apos;s Next?</p>
         <h1 className="text-slate-300 text-center text-3xl font-bold">Get In Touch</h1>
@@ -11,7 +11,7 @@ export default function Footer() {
       </div>
 
       <div className="text-slate-400 py-2 px-7 ui-font-serif p-color-style text-center">
-        <a href="" className="outline outline-offset-2 outline-1 px-7 py-2 text-base p-setegah rounded-sm">
+        <a href="/" className="outline outline-offset-2 outline-1 px-7 py-2 text-base p-setegah rounded-sm">
           Say Hello
         </a>
       </div>

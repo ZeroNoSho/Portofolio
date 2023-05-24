@@ -1,8 +1,9 @@
-import "@/style/globals.css";
-import 'aos/dist/aos.css';
+import "../style/globals.css";
+import "aos/dist/aos.css";
 import { Inter } from "next/font/google";
-import Nav from "@/app/components/Nav";
-import Footer from "@/app/components/Foot";
+import Nav from "../components/Nav";
+import Footer from "../components/Foot";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,7 +15,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className} suppressHydrationWarning={true} >
+      <Head>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      </Head>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <Nav></Nav>
         {children}
         <Footer></Footer>

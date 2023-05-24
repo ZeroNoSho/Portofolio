@@ -1,15 +1,14 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import AOS from "aos";
-import React, { useState } from "react";
+import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { faArrowUpRightFromSquare } from "@fortawesome/free-solid-svg-icons";
 import { faFolder } from "@fortawesome/free-regular-svg-icons";
 
-export default function Home() {
+export default function Page() {
   const [img, setImg] = useState("Course Dasar-dasar HTML dan CSS.jpg");
   const [tahun, setBln] = useState("September 2022");
 
@@ -19,32 +18,11 @@ export default function Home() {
     { img: "Course Web App Berbasis React.jpg", thn: "October 2022" },
   ];
 
-  AOS.init();
-  AOS.init({
-    // Global settings:
-    disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
-    startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
-    initClassName: "aos-init", // class applied after initialization
-    animatedClassName: "aos-animate", // class applied on animation
-    useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
-    disableMutationObserver: false, // disables automatic mutations' detections (advanced)
-    debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
-    throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
-
-    // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
-    offset: 120, // offset (in px) from the original trigger point
-    delay: 0, // values from 0 to 3000, with step 50ms
-    duration: 400, // values from 0 to 3000, with step 50ms
-    easing: "ease", // default easing for AOS animations
-    once: false,
-    mirror: false,
-    anchorPlacement: "top-bottom",
-  });
 
   return (
-    <div>
+    <main>
       <div className="inside xl:p-24 max-[765px]:p-1 md:p-1">
-        <div id="first-pages" className="mx-20 my-11 max-[765px]:mx-10" data-aos="fade" data-aos-duration="3000" data-aos-delay="1000">
+        <div id="first-pages" className="mx-20 my-11 max-[765px]:mx-10">
           <p className="p-color-style text-lg font-semibold">Hi, i&apos;am</p>
           <div className="py-5">
             <p className="text-slate-300 text-7xl font-semibold max-[765px]:text-3xl">Ari Rachaman.</p>
@@ -56,7 +34,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="about-me" className="mx-20 mt-60 mb-40 max-[765px]:mx-10" data-aos="fade" data-aos-duration="2000" data-aos-delay="500">
+        <div id="about-me" className="mx-20 mt-60 mb-40 max-[765px]:mx-10">
           <div className="flex max-[765px]:block">
             <div className="mr-20 max-[765px]:mr-0">
               <div className="mb-5">
@@ -87,7 +65,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="Certificate-me" className="xl:mx-60 my-20 max-[765px]:mx-10 md:mx-28" data-aos="fade" data-aos-duration="3000" data-aos-delay="500">
+        <div id="Certificate-me" className="xl:mx-60 my-20 max-[765px]:mx-10 md:mx-28">
           <p className="text-slate-300 text-3xl font-bold my-10 max-[765px]:text-2xl">
             <span className="text-2xl p-color-style max-[765px]:text-xl">02.</span> My Skills Certificate
           </p>
@@ -138,7 +116,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div id="Work-me" className="mx-20 mt-40 mb-40 max-[765px]:mx-5" data-aos="fade" data-aos-duration="3000" data-aos-delay="500">
+        <div id="Work-me" className="mx-20 mt-40 mb-40 max-[765px]:mx-5">
           <p className="text-slate-300 text-3xl font-bold my-10 max-[765px]:text-2xl my-7">
             <span className="text-2xl p-color-style max-[765px]:text-xl">03.</span> Some Things I&apos;ve Built
           </p>
@@ -175,8 +153,8 @@ export default function Home() {
                   <p className="text-slate-300 text-2xl font-bold max-[765px]:px-5 max-[765px]:pt-5">e-commerce App</p>
                   <div className="color-bg-or4 mt-5 rounded">
                     <p className="text-slate-500 text-lg w-fit text-justify max-[765px]:py-1 max-[765px]:px-5 max-[765px]:text-sm">
-                      An Online Store application built with ReactJS, With this application, you can see various types of sales based on existing categories. Plus, with a sleek and intuitive user interface, you&apos;ll have all the information
-                      you need at your fingertips.
+                      An Online Store application built with ReactJS, With this application, you can see various types of sales based on existing categories. Plus, with a sleek and intuitive user interface, you&apos;ll have all the
+                      information you need at your fingertips.
                     </p>
                   </div>
                   <p className="text-slate-500 text-sm pt-5 pb-2 pl-1 max-[765px]:pl-5 max-[765px]:text-xs">React, Bulma, API, Firebase</p>
@@ -317,28 +295,28 @@ export default function Home() {
       </div>
 
       <div className="outside max-[765px]:hidden">
-        <div className="fixed bottom-0 right-12 p-color-style flex inline-block1 items-center gap-2" data-aos="fade-up" data-aos-duration="3000">
-          <Link className="p-color-style text-lg" href="/">
+        <div className="fixed bottom-0 right-12 p-color-style flex inline-block1 items-center gap-2">
+          <Link className="p-color-style text-lg" href="https://vercel.com/zeronosho/portofolio-wajp">
             inukuro351@gmail.com
           </Link>
           <div className="color-bg-or h-40"></div>
         </div>
 
-        <div className="fixed bottom-0 left-12 p-color-style flex inline-block1 items-center gap-2" data-aos="fade-up" data-aos-duration="3000">
-          <Link className="p-color-style text-lg" href="/">
+        <div className="fixed bottom-0 left-12 p-color-style flex inline-block1 items-center gap-2">
+          <Link className="p-color-style text-lg" href="https://vercel.com/zeronosho/portofolio-wajp">
             <FontAwesomeIcon icon={faGithub} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
-          <Link className="p-color-style text-ls" href="/">
+          <Link className="p-color-style text-ls" href="https://vercel.com/zeronosho/portofolio-wajp">
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
-          <Link className="p-color-style text-lg" href="/">
+          <Link className="p-color-style text-lg" href="https://vercel.com/zeronosho/portofolio-wajp">
             <FontAwesomeIcon icon={faLinkedinIn} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
