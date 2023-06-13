@@ -25,6 +25,7 @@ export default function Page() {
       easing: "ease-out-cubic",
       once: true,
       offset: 50,
+      duration: 3000,
     });
   }, []);
 
