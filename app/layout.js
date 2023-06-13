@@ -1,3 +1,4 @@
+"use client";
 import "../style/globals.css";
 import { Inter } from "next/font/google";
 import Nav from "../components/Nav";
@@ -16,6 +17,7 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  
   useEffect(() => {
     AOS.init({
       easing: "ease-out-cubic",
