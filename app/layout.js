@@ -1,8 +1,13 @@
+"use client";
 import "../style/globals.css";
 import { Inter } from "next/font/google";
 import Nav from "../components/Nav";
 import Footer from "../components/Foot";
 import Head from "next/head";
+
+import { useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,6 +17,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+      duration: 3000,
+    });
+  }, []);
+
   return (
     <html lang="en">
       <Head>

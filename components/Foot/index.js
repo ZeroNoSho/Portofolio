@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Footer() {
   return (
-    <div id="foot" className="mt-10 mb-60 mx-10">
+    <div id="foot" className="mt-10 mb-60 mx-10" data-aos="fade-up">
       <div className="p-5">
         <p className="p-color-style text-center text-lg">04. What&apos;s Next?</p>
         <h1 className="text-slate-300 text-center text-3xl font-bold">Get In Touch</h1>

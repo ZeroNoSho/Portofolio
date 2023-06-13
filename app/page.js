@@ -22,7 +22,7 @@ export default function Page() {
   return (
     <main>
       <div className="inside xl:p-24 max-[765px]:p-1 md:p-1">
-        <div id="first-pages" className="mx-20 my-11 max-[765px]:mx-10">
+        <div id="first-pages" className="mx-20 my-11 max-[765px]:mx-10" data-aos="fade-up">
           <p className="p-color-style text-lg font-semibold">Hi, i&apos;am</p>
           <div className="py-5">
             <p className="text-slate-300 text-7xl font-semibold max-[765px]:text-3xl">Ari Rachaman.</p>
@@ -34,7 +34,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div id="about-me" className="mx-20 mt-60 mb-40 max-[765px]:mx-10">
+        <div id="about-me" className="mx-20 mt-60 mb-40 max-[765px]:mx-10" data-aos="fade-up">
           <div className="flex max-[765px]:block">
             <div className="mr-20 max-[765px]:mr-0">
               <div className="mb-5">
@@ -65,7 +65,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div id="Certificate-me" className="xl:mx-60 my-20 max-[765px]:mx-10 md:mx-28">
+        <div id="Certificate-me" className="xl:mx-60 my-20 max-[765px]:mx-10 md:mx-28" data-aos="fade-up">
           <p className="text-slate-300 text-3xl font-bold my-10 max-[765px]:text-2xl">
             <span className="text-2xl p-color-style max-[765px]:text-xl">02.</span> My Skills Certificate
           </p>
@@ -116,7 +116,7 @@ export default function Page() {
           </div>
         </div>
 
-        <div id="Work-me" className="mx-20 mt-40 mb-40 max-[765px]:mx-5">
+        <div id="Work-me" className="mx-20 mt-40 mb-40 max-[765px]:mx-5" data-aos="fade-up">
           <p className="text-slate-300 text-3xl font-bold my-10 max-[765px]:text-2xl my-7">
             <span className="text-2xl p-color-style max-[765px]:text-xl">03.</span> Some Things I&apos;ve Built
           </p>
@@ -295,14 +295,14 @@ export default function Page() {
       </div>
 
       <div className="outside max-[765px]:hidden">
-        <div className="fixed bottom-0 right-12 p-color-style flex inline-block1 items-center gap-2">
+        <div className="fixed bottom-0 right-12 p-color-style flex inline-block1 items-center gap-2" data-aos="fade-up">
           <Link className="p-color-style text-lg" href="mailto:rachmanari745@gmail.com">
             inukuro351@gmail.com
           </Link>
           <div className="color-bg-or h-40"></div>
         </div>
 
-        <div className="fixed bottom-0 left-12 p-color-style flex inline-block1 items-center gap-2">
+        <div className="fixed bottom-0 left-12 p-color-style flex inline-block1 items-center gap-2" data-aos="fade-up">
           <Link className="p-color-style text-lg" href="https://github.com/ZeroNoSho">
             <FontAwesomeIcon icon={faGithub} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>

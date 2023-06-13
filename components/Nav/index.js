@@ -8,7 +8,7 @@ export default function Nav() {
   const [open, SetOpen] = useState(false);
   return (
     <div className="flex flex-row justify-between mx-10 my-3 max-[765px]:block max-[765px]:mx-2 md:mx-8">
-      <div className="flex flex-row justify-between">
+      <div className="flex flex-row justify-between" data-aos="fade-right">
         <h3 className="p-color-style py-2 px-5 ui-font-serif font-semibold text-xl md:px-2">
           <Link href="/page">
             <span className="pr-2">A</span>
@@ -24,7 +24,7 @@ export default function Nav() {
         </div>
       </div>
       <div className={`${open ? "block" : "hidden"} md:block`}>
-        <ul className="flex max-[765px]:block" data-aos="fade-left" data-aos-duration="3000">
+        <ul className="flex max-[765px]:block" data-aos="fade-left">
           <li className="text-slate-400 py-2 px-5 ui-font-serif font-medium text-base tracking-widest hover:text-orange-300 md:px-3">
             <Link href="#about-me">
               <span className="p-color-style text-xs">01.</span> About
