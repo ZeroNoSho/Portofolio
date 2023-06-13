@@ -307,11 +307,11 @@ export default function Page() {
             <FontAwesomeIcon icon={faGithub} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
-          <Link className="p-color-style text-ls" href="https://www.linkedin.com/in/ari-rachman-395870198/">
+          <Link className="p-color-style text-ls" href="https://www.instagram.com/ari_rachman01/">
             <FontAwesomeIcon icon={faInstagram} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
-          <Link className="p-color-style text-lg" href="https://www.instagram.com/ari_rachman01/">
+          <Link className="p-color-style text-lg" href="https://www.linkedin.com/in/ari-rachman-395870198/">
             <FontAwesomeIcon icon={faLinkedinIn} style={{ color: "#ffcb74" }} className="items-center pl-1" />
           </Link>
           <div className="color-bg-or h-20"></div>
