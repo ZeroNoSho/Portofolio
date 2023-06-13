@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import AOS from "aos";
+import 'aos/dist/aos.css';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
@@ -17,6 +19,14 @@ export default function Page() {
     { img: "Skilvul JavaScript Intermediate (Gold).jpg", thn: "October 2022" },
     { img: "Course Web App Berbasis React.jpg", thn: "October 2022" },
   ];
+
+  useEffect(() => {
+    AOS.init({
+      easing: "ease-out-cubic",
+      once: true,
+      offset: 50,
+    });
+  }, []);
 
 
   return (
