@@ -29,9 +29,6 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
-      <Head>
-        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-      </Head>
       <body className={inter.className} suppressHydrationWarning={true}>
         <Nav></Nav>
         {children}
