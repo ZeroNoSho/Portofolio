@@ -23,7 +23,6 @@ export default function RootLayout({ children }) {
       easing: "ease-out-cubic",
       once: true,
       offset: 50,
-      duration: 3000,
     });
   }, []);
 
