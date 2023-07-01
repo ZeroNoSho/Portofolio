@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { useState, useEffect } from "react";
 import AOS from "aos";
-import 'aos/dist/aos.css';
+import "aos/dist/aos.css";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
@@ -28,7 +28,6 @@ export default function Page() {
       duration: 3000,
     });
   }, []);
-
 
   return (
     <main>
@@ -136,24 +135,24 @@ export default function Page() {
             <div className="work-me-1 xl:my-20 max-[765px]:my-5 md:my-5">
               <div className="flex max-[765px]:relative max-[765px]:grid">
                 <div className="m-auto mr-10 color-bg-or2 max-[765px]:mr-0 max-[765px]:z-20 max-[765px]:opacity-95 max-[765px]:rounded-xl">
-                  <p className="text-slate-300 text-2xl font-bold max-[765px]:px-5 max-[765px]:pt-5">Weather App</p>
+                  <p className="text-slate-300 text-2xl font-bold max-[765px]:px-5 max-[765px]:pt-5">Anime streaming app</p>
                   <div className="color-bg-or4  mt-5 rounded">
                     <p className="text-slate-500 text-lg w-fit text-justify max-[765px]:py-1 max-[765px]:px-5 max-[765px]:text-sm">
-                      Weather Application built with ReactJS, and the ability to capture Weather And RealTime Data in various countries. With this application, you can see the weather based on the area you entered. Plus, with a sleek and
-                      intuitive user interface, you&apos;ll have all the information you need at your fingertips.
+                      Anime streaming app is built with NextJS. With this application, you can see your favorite anime for free and with good graphics. Plus, with a sleek and intuitive user interface, you&apos;ll have all the information
+                      you need at your fingertips.
                     </p>
                   </div>
-                  <p className="text-slate-500 text-sm pt-5 pb-2 pl-1 max-[765px]:pl-5 max-[765px]:text-xs">React, Bootstrap, API</p>
+                  <p className="text-slate-500 text-sm pt-5 pb-2 pl-1 max-[765px]:pl-5 max-[765px]:text-xs">Next, Tailwind, API, Vercel</p>
                   <div className="pl-1 text max-[765px]:pl-4 max-[765px]:pb-5">
-                    <Link className="text-2xl" href="https://github.com/ZeroNoSho/weather">
+                    <Link className="text-2xl" href="https://github.com/ZeroNoSho/Anime">
                       <FontAwesomeIcon icon={faGithub} className="px-2 h-6 text-center text-slate-500 hover:text-orange-300" />
                     </Link>
-                    <Link className="text-xl" href="https://zeronosho.github.io/weather/">
+                    <Link className="text-xl" href="https://anime-nu-rosy.vercel.app/">
                       <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="px-2 h-5 text-slate-500 hover:text-orange-300" />
                     </Link>
                   </div>
                 </div>
-                <Image src="/weath.png" width={520} height={340} alt="profile" className="rounded-md m-auto xl:h-auto xl:w-5/12 max-[765px]:absolute max-[765px]:h-full max-[765px]:w-full md:w-80 md:h-36" />
+                <Image src="/anime.png" width={520} height={340} alt="profile" className="rounded-md m-auto xl:h-auto xl:w-5/12 max-[765px]:absolute max-[765px]:h-full max-[765px]:w-full md:w-80 md:h-36" />
               </div>
             </div>
 
@@ -259,22 +258,22 @@ export default function Page() {
                 <div className="color-bg-or3  mt-5 rounded">
                   <div className="flex justify-between">
                     <p className="p-5 text-slate-300 text-2xl font-bold">
-                      <FontAwesomeIcon icon={faFolder} className="p-color-style text-3xl pr-5" /> Recipe App
+                      <FontAwesomeIcon icon={faFolder} className="p-color-style text-3xl pr-5" /> Weather App
                     </p>
                     <div className=" text p-5">
-                      <Link className="text-2xl" href="https://github.com/ZeroNoSho/resep">
+                      <Link className="text-2xl" href="https://github.com/ZeroNoSho/weather">
                         <FontAwesomeIcon icon={faGithub} className="px-3 text-center text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full" />
                       </Link>
-                      <Link className="text-xl" href="https://resep-zeronosho.vercel.app/">
+                      <Link className="text-xl" href="https://zeronosho.github.io/weather/">
                         <FontAwesomeIcon icon={faArrowUpRightFromSquare} className="px-3 text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full" />
                       </Link>
                     </div>
                   </div>
 
                   <p className="text-slate-500 text-lg pl-5 pr-5 w-fit text-justify max-[765px]:py-1 max-[765px]:px-5 max-[765px]:text-sm">
-                    The Food Recipes app is built with ReactJS. With this application, you can get a variety of meal recipes.
+                    The weather app is built with ReactJS. With this application, you can get various kinds of weather data around the world.
                   </p>
-                  <p className="p-5 text-slate-500 text-sm max-[765px]:text-xs">React, Bootstrap, API, Vercel</p>
+                  <p className="p-5 text-slate-500 text-sm max-[765px]:text-xs">React, Bootstrap, API</p>
                 </div>
               </div>
 
