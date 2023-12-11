@@ -311,7 +311,7 @@ export default function Page() {
                     </p>
                   </div>
                   <p className="text-slate-500 text-sm pt-5 pb-2 pl-1 max-[765px]:pl-5 max-[765px]:text-xs">
-                    React, Bulma, API, Firebase
+                    Next, Tailwind, API, MonggoDB
                   </p>
                   <div className="pl-1 text max-[765px]:pl-4 max-[765px]:pb-5">
                     <Link
@@ -486,12 +486,12 @@ export default function Page() {
                         icon={faFolder}
                         className="p-color-style text-3xl pr-5"
                       />{" "}
-                      Clone App
+                      Downloader App
                     </p>
                     <div className=" text p-5">
                       <Link
                         className="text-2xl"
-                        href="https://github.com/ZeroNoSho/Comp"
+                        href="https://github.com/ZeroNoSho/Downloader"
                       >
                         <FontAwesomeIcon
                           icon={faGithub}
@@ -500,7 +500,7 @@ export default function Page() {
                       </Link>
                       <Link
                         className="text-xl"
-                        href="https://comp-eight.vercel.app/"
+                        href="https://downloader-zeta.vercel.app/"
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
@@ -516,7 +516,7 @@ export default function Page() {
                     Digital.
                   </p>
                   <p className="p-5 text-slate-500 text-sm max-[765px]:text-xs">
-                    React, Bulma, API, Firebase
+                    React, Bulma, API
                   </p>
                 </div>
               </div>
