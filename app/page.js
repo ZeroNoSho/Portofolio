@@ -511,9 +511,8 @@ export default function Page() {
                   </div>
 
                   <p className="text-slate-500 text-lg pl-5 pr-5 w-fit text-justify max-[765px]:py-1 max-[765px]:px-5 max-[765px]:text-sm">
-                    The Clone BCA Digital application is built with ReactJS.
-                    This application is just a clone that looks like BCA
-                    Digital.
+                    Application for downloading YouTube, Instagram and TikTok
+                    videos without watermarks built with ReactJS.
                   </p>
                   <p className="p-5 text-slate-500 text-sm max-[765px]:text-xs">
                     React, Bulma, API
