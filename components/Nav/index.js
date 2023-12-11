@@ -19,8 +19,14 @@ export default function Nav() {
             <span className="pr-2">.</span>
           </Link>
         </h3>
-        <div className="text-2xl md:hidden cursor-pointer my-auto px-5" onClick={() => SetOpen(!open)}>
-          <FontAwesomeIcon icon={open ? faXmark : faBars} className="p-color-style" />
+        <div
+          className="text-2xl md:hidden cursor-pointer my-auto px-5"
+          onClick={() => SetOpen(!open)}
+        >
+          <FontAwesomeIcon
+            icon={open ? faXmark : faBars}
+            className="p-color-style"
+          />
         </div>
       </div>
       <div className={`${open ? "block" : "hidden"} md:block`}>
@@ -47,8 +53,11 @@ export default function Nav() {
             </Link>
           </li>
           <li className="text-slate-400 py-2 px-5 ui-font-serif p-color-style tracking-widest hover:text-orange-300 md:px-3">
-            <Link href="/" className="outline outline-offset-2 outline-1 px-4 text-sm p-setegah rounded-sm md:px-2">
-              Resume
+            <Link
+              href="https://drive.google.com/uc?export=download&id=1YHWt2tlrM2u3Wuq5t2PVbLmCjIDPKNpr"
+              className="outline outline-offset-2 outline-1 px-4 text-sm p-setegah rounded-sm md:px-2"
+            >
+              Download CV
             </Link>
           </li>
         </ul>
