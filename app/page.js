@@ -135,7 +135,7 @@ export default function Page() {
             <div className="flex gap-10 xl:mr-0 md:mr-2">
               <div className="color-bg-or1 h-20"></div>
               <div>
-                <p
+                <button
                   className="text-slate-400 text-lg mb-10 hover:text-orange-300 cursor-pointer"
                   onClick={(e) => {
                     setImg(e.target.dataset.img);
@@ -145,10 +145,11 @@ export default function Page() {
                   data-thn={imgs[0].thn}
                 >
                   HTML dan CSS
-                </p>
-                <p
+                </button>
+                <button
                   className="text-slate-400 text-lg mb-10 hover:text-orange-300 cursor-pointer"
                   onClick={(e) => {
+                    e.preventDefault;
                     setImg(e.target.dataset.img);
                     setBln(e.target.dataset.thn);
                   }}
@@ -156,8 +157,8 @@ export default function Page() {
                   data-thn={imgs[1].thn}
                 >
                   JavaScript
-                </p>
-                <p
+                </button>
+                <button
                   className="text-slate-400 text-lg mb-10 hover:text-orange-300 cursor-pointer"
                   onClick={(e) => {
                     setImg(e.target.dataset.img);
@@ -167,7 +168,7 @@ export default function Page() {
                   data-thn={imgs[2].thn}
                 >
                   React Js
-                </p>
+                </button>
               </div>
             </div>
 
