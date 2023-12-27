@@ -33,6 +33,11 @@ export default function Page() {
     });
   }, []);
 
+  const handleDownload = (e) => {
+    const downloadLink = e;
+    window.location.href = downloadLink;
+  };
+
   return (
     <main>
       <div className="inside xl:p-24 max-[765px]:p-1 md:p-1">
@@ -135,9 +140,11 @@ export default function Page() {
             <div className="flex gap-10 xl:mr-0 md:mr-2">
               <div className="color-bg-or1 h-20"></div>
               <div>
-                <button
+                <p
+                  id="portofolio3"
                   className="text-slate-400 text-lg mb-10 hover:text-orange-300 cursor-pointer"
                   onClick={(e) => {
+                    e.preventDefault;
                     setImg(e.target.dataset.img);
                     setBln(e.target.dataset.thn);
                   }}
@@ -145,8 +152,9 @@ export default function Page() {
                   data-thn={imgs[0].thn}
                 >
                   HTML dan CSS
-                </button>
-                <button
+                </p>
+                <p
+                  id="portofolio2"
                   className="text-slate-400 text-lg mb-10 hover:text-orange-300 cursor-pointer"
                   onClick={(e) => {
                     e.preventDefault;
@@ -157,10 +165,12 @@ export default function Page() {
                   data-thn={imgs[1].thn}
                 >
                   JavaScript
-                </button>
-                <button
+                </p>
+                <p
+                  id="portofolio"
                   className="text-slate-400 text-lg mb-10 hover:text-orange-300 cursor-pointer"
                   onClick={(e) => {
+                    e.preventDefault;
                     setImg(e.target.dataset.img);
                     setBln(e.target.dataset.thn);
                   }}
@@ -168,7 +178,7 @@ export default function Page() {
                   data-thn={imgs[2].thn}
                 >
                   React Js
-                </button>
+                </p>
               </div>
             </div>
 
@@ -274,24 +284,28 @@ export default function Page() {
                     React, Bulma, API, Firebase
                   </p>
                   <div className="pl-1 text max-[765px]:pl-4 max-[765px]:pb-5">
-                    <Link
+                    <button
                       className="text-2xl"
-                      href="https://github.com/ZeroNoSho/Store"
+                      onClick={() =>
+                        handleDownload("https://github.com/ZeroNoSho/Store")
+                      }
                     >
                       <FontAwesomeIcon
                         icon={faGithub}
                         className="px-2 h-6 text-center text-slate-500 hover:text-orange-300"
                       />
-                    </Link>
-                    <Link
+                    </button>
+                    <button
                       className="text-xl"
-                      href="https://aristore-6d487.web.app/"
+                      onClick={() =>
+                        handleDownload("https://aristore-6d487.web.app/")
+                      }
                     >
                       <FontAwesomeIcon
                         icon={faArrowUpRightFromSquare}
                         className="px-2 h-5 text-slate-500 hover:text-orange-300"
                       />
-                    </Link>
+                    </button>
                   </div>
                 </div>
               </div>
@@ -315,24 +329,28 @@ export default function Page() {
                     Next, Tailwind, API, MonggoDB
                   </p>
                   <div className="pl-1 text max-[765px]:pl-4 max-[765px]:pb-5">
-                    <Link
+                    <button
                       className="text-2xl"
-                      href="https://github.com/ZeroNoSho/webstock"
+                      onClick={() =>
+                        handleDownload("https://github.com/ZeroNoSho/webstock")
+                      }
                     >
                       <FontAwesomeIcon
                         icon={faGithub}
                         className="px-2 h-6 text-center text-slate-500 hover:text-orange-300"
                       />
-                    </Link>
-                    <Link
+                    </button>
+                    <button
                       className="text-xl"
-                      href="https://webstock-peach.vercel.app/"
+                      onClick={() =>
+                        handleDownload("https://webstock-peach.vercel.app/")
+                      }
                     >
                       <FontAwesomeIcon
                         icon={faArrowUpRightFromSquare}
                         className="px-2 h-5 text-slate-500 hover:text-orange-300"
                       />
-                    </Link>
+                    </button>
                   </div>
                 </div>
                 <Image
@@ -362,24 +380,28 @@ export default function Page() {
                       3D App
                     </p>
                     <div className=" text p-5">
-                      <Link
+                      <button
                         className="text-2xl"
-                        href="https://github.com/ZeroNoSho/Love"
+                        onClick={() =>
+                          handleDownload("https://github.com/ZeroNoSho/Love")
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faGithub}
                           className="px-3 text-center text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
-                      <Link
+                      </button>
+                      <button
                         className="text-xl"
-                        href="https://love-beige.vercel.app/kuro"
+                        onClick={() =>
+                          handleDownload("https://love-beige.vercel.app/kuro")
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
                           className="px-3 text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
+                      </button>
                     </div>
                   </div>
 
@@ -400,28 +422,32 @@ export default function Page() {
                       <FontAwesomeIcon
                         icon={faFolder}
                         className="p-color-style text-3xl pr-5"
-                      />{" "}
+                      />
                       Movie App
                     </p>
                     <div className=" text p-5">
-                      <Link
+                      <button
                         className="text-2xl"
-                        href="https://github.com/ZeroNoSho/movie"
+                        onClick={() =>
+                          handleDownload("https://github.com/ZeroNoSho/movie")
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faGithub}
                           className="px-3 text-center text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
-                      <Link
+                      </button>
+                      <button
                         className="text-xl"
-                        href="https://zeronosho.github.io/movie/"
+                        onClick={() =>
+                          handleDownload("https://zeronosho.github.io/movie/")
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
                           className="px-3 text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
+                      </button>
                     </div>
                   </div>
 
@@ -443,28 +469,32 @@ export default function Page() {
                       <FontAwesomeIcon
                         icon={faFolder}
                         className="p-color-style text-3xl pr-5"
-                      />{" "}
+                      />
                       Weather App
                     </p>
                     <div className=" text p-5">
-                      <Link
+                      <button
                         className="text-2xl"
-                        href="https://github.com/ZeroNoSho/weather"
+                        onClick={() =>
+                          handleDownload("https://github.com/ZeroNoSho/weather")
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faGithub}
                           className="px-3 text-center text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
-                      <Link
+                      </button>
+                      <button
                         className="text-xl"
-                        href="https://zeronosho.github.io/weather/"
+                        onClick={() =>
+                          handleDownload("https://zeronosho.github.io/weather/")
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
                           className="px-3 text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
+                      </button>
                     </div>
                   </div>
 
@@ -486,28 +516,34 @@ export default function Page() {
                       <FontAwesomeIcon
                         icon={faFolder}
                         className="p-color-style text-3xl pr-5"
-                      />{" "}
+                      />
                       Downloader App
                     </p>
                     <div className=" text p-5">
-                      <Link
+                      <button
                         className="text-2xl"
-                        href="https://github.com/ZeroNoSho/Downloader"
+                        onClick={() =>
+                          handleDownload(
+                            "https://github.com/ZeroNoSho/Downloader"
+                          )
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faGithub}
                           className="px-3 text-center text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
-                      <Link
+                      </button>
+                      <button
                         className="text-xl"
-                        href="https://downloader-zeta.vercel.app/"
+                        onClick={() =>
+                          handleDownload("https://downloader-zeta.vercel.app/")
+                        }
                       >
                         <FontAwesomeIcon
                           icon={faArrowUpRightFromSquare}
                           className="px-3 text-slate-500 hover:text-orange-300 max-[765px]:px-1 max-[765px]:w-full"
                         />
-                      </Link>
+                      </button>
                     </div>
                   </div>
 
@@ -543,38 +579,44 @@ export default function Page() {
           className="fixed bottom-0 left-12 p-color-style flex inline-block1 items-center gap-2"
           data-aos="fade-up"
         >
-          <Link
+          <button
             className="p-color-style text-lg"
-            href="https://github.com/ZeroNoSho"
+            onClick={() => handleDownload("https://github.com/ZeroNoSho")}
           >
             <FontAwesomeIcon
               icon={faGithub}
               style={{ color: "#ffcb74" }}
               className="items-center pl-1"
             />
-          </Link>
+          </button>
           <div className="color-bg-or h-20"></div>
-          <Link
+          <button
             className="p-color-style text-ls"
-            href="https://www.instagram.com/ari_rachman01/"
+            onClick={() =>
+              handleDownload("https://www.instagram.com/ari_rachman01/")
+            }
           >
             <FontAwesomeIcon
               icon={faInstagram}
               style={{ color: "#ffcb74" }}
               className="items-center pl-1"
             />
-          </Link>
+          </button>
           <div className="color-bg-or h-20"></div>
-          <Link
+          <button
             className="p-color-style text-lg"
-            href="https://www.linkedin.com/in/ari-rachman-395870198/"
+            onClick={() =>
+              handleDownload(
+                "https://www.linkedin.com/in/ari-rachman-395870198/"
+              )
+            }
           >
             <FontAwesomeIcon
               icon={faLinkedinIn}
               style={{ color: "#ffcb74" }}
               className="items-center pl-1"
             />
-          </Link>
+          </button>
           <div className="color-bg-or h-20"></div>
         </div>
       </div>

@@ -6,6 +6,11 @@ import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons";
 
 export default function Nav() {
   const [open, SetOpen] = useState(false);
+  const handleDownload = () => {
+    const downloadLink =
+      "https://drive.google.com/uc?export=download&id=1YHWt2tlrM2u3Wuq5t2PVbLmCjIDPKNpr";
+    window.location.href = downloadLink;
+  };
   return (
     <div className="flex flex-row justify-between mx-10 my-3 max-[765px]:block max-[765px]:mx-2 md:mx-8">
       <div className="flex flex-row justify-between" data-aos="fade-right">
@@ -53,12 +58,12 @@ export default function Nav() {
             </a>
           </li>
           <li className="text-slate-400 py-2 px-5 ui-font-serif p-color-style tracking-widest hover:text-orange-300 md:px-3">
-            <Link
-              href="https://drive.google.com/uc?export=download&id=1YHWt2tlrM2u3Wuq5t2PVbLmCjIDPKNpr"
+            <button
               className="outline outline-offset-2 outline-1 px-4 text-sm p-setegah rounded-sm md:px-2"
+              onClick={handleDownload}
             >
               Download CV
-            </Link>
+            </button>
           </li>
         </ul>
       </div>
